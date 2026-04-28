@@ -1,0 +1,2 @@
+#  PARADIGMAS_PROGRAMACIÓN_clase 6
+

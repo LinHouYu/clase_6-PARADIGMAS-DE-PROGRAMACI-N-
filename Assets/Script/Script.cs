@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Script : MonoBehaviour
 {
@@ -20,7 +20,33 @@ public class Script : MonoBehaviour
     {
         public override void Atacar()
         {
-            Debug.Log("Morder a" + Nombre);
+            Debug.Log("Mordio" + Nombre);
+        }
+
+        public virtual void HabilidadEspecial()
+        {
+            Debug.Log("Ataco con su habileEspecial mordidad venenosos a " + Nombre);
+        }
+    }
+
+
+
+    public class Orco : Enemigo
+    {
+
+        public override void HabilidadEspecial()
+        {
+            Debug.Log("Ataque habiles especial critos a " + Nombre);
+        }
+    }
+
+
+    public class Dragon : Enemigo
+    {
+
+        public override void HabilidadEspecial()
+        {
+            Debug.Log("Ataques habiles especial bolas de fuegos a " + Nombre);
         }
     }
 }
